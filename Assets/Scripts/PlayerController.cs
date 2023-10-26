@@ -47,9 +47,9 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-     
+		audio.Play(); //playback sound 
 
-        if (other.tag == "Item")
+		if (other.tag == "Item")
         { 
             itemCount++;
             audio.Play(); //playback sound 
